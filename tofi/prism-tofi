@@ -1,0 +1,9 @@
+# prism theme for tofi
+# add to ~/.config/tofi/config
+
+background-color = #000000
+text-color = #bda7f0
+input-color = #ff7447
+selection-color = #000000
+selection-background = #ff7447
+placeholder-color = #989898

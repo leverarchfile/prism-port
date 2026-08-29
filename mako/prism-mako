@@ -1,0 +1,23 @@
+# prism theme for mako
+# paste into ~/.config/mako/config, or keep as a file and add:  include=~/.config/mako/prism-mako
+# reload with: makoctl reload
+
+[urgency=low]
+background-color=#bda7f0
+text-color=#000000
+border-color=#bda7f0
+progress-color=over #ff7447
+default-timeout=5000
+
+[urgency=normal]
+background-color=#bda7f0
+text-color=#000000
+border-color=#bda7f0
+progress-color=over #ff7447
+default-timeout=10000
+
+[urgency=high]
+background-color=#ff7447
+text-color=#000000
+border-color=#ff7447
+ignore-timeout=0

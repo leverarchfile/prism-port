@@ -1,0 +1,59 @@
+return {
+  "nvim-lualine/lualine.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+
+  config = function()
+    -- prism: statusline sits on the surface tone, not the page
+    local theme = require('lualine.themes.pywal16-nvim')
+
+    for _, mode in pairs(theme) do
+      if type(mode) == 'table' then
+        for _, sec in ipairs({ 'b', 'c', 'x', 'y' }) do
+          if mode[sec] then
+            mode[sec].bg = '#303030'
+          end
+        end
+      end
+    end
+
+    -- prism: inactive splits use quiet grey on the same surface
+    if theme.inactive then
+      for _, section in pairs(theme.inactive) do
+        section.bg = '#303030'
+        section.fg = '#989898'
+      end
+    end
+
+    require('lualine').setup {
+      options = {
+        icons_enabled = true,
+        theme = theme,
+        component_separators = '',
+        section_separators = '',
+
+        disabled_filetypes = {
+          statusline = {},
+          winbar = {},
+        },
+        ignore_focus = {},
+        always_divide_middle = true,
+        globalstatus = false,
+        refresh = {
+          statusline = 1000,
+          tabline = 1000,
+          winbar = 1000,
+        }
+      },
+      sections = {
+        lualine_a = {'mode'},
+        -- lualine_a = {'buffers'},
+        lualine_b = {'branch', 'diff', 'diagnostics'},
+        -- lualine_c = {'filename'},
+        lualine_c = {'buffers'},
+        lualine_x = {'filetype'},
+        lualine_y = {'progress'},
+        lualine_z = {'location'}
+      },
+    }
+  end,
+}

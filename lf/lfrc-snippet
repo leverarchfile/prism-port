@@ -1,0 +1,2 @@
+# prism theme: lf error line as black-on-orange (matches notification grammar)
+set errorfmt "\033[30;41m"
