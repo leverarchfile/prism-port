@@ -164,4 +164,6 @@ active. The GTK4 fixes are edits made directly to the theme's own
   deprecated in current GTK4 and its rules were not applying reliably here.
 - Containers (window, box, stack, notebook, scrolledwindow, viewport) set to
   black.
-- Tab strip set to black, with a lavender underline on
+- Tab strip set to black, active tab filled lavender with black text.
+- Sliders set to orange up to the current level and grey beyond it, with a
+  lavender handle. Level indicators (GTK levelbars) set to lavender.
