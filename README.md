@@ -6,6 +6,12 @@ rmpc, tofi, swaylock, GTK apps, and Firefox. The palette and conventions
 apply beyond these programs, so the files here can also serve as a starting
 point for porting the theme further.
 
+![prism-theme-1](screenshots/prism-theme-1.png)
+
+![prism-theme-2](screenshots/prism-theme-2.png)
+
+![prism-theme-3](screenshots/prism-theme-3.png)
+
 **Design tokens:**
 - Background: `#000000`
 - Accent/stroke: `#BDA7F0` (lavender)
@@ -15,12 +21,6 @@ point for porting the theme further.
 This is a reference repo, not an installable theme. Copy the files (or the
 parts of them you want) into your own configs. Each file's header says where
 it goes.
-
-![prism-theme-1](screenshots/prism-theme-1.png)
-
-![prism-theme-2](screenshots/prism-theme-2.png)
-
-![prism-theme-3](screenshots/prism-theme-3.png)
 
 ## Palette
 
