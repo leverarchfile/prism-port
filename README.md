@@ -95,6 +95,7 @@ Notes:
   sage). To follow GNU's convention for flagged directories (black text on
   green), set the following in `.bashrc`, `.zshrc`, or wherever environment
   variables are set:
+
   `export LS_COLORS="$LS_COLORS:ow=01;30;42:tw=01;30;42"`
 
 ### With pywal16
